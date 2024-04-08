@@ -1,7 +1,7 @@
 ## Changelog
 
 #### 5.0.3 
-* Fixed flat report not working for campaign_name and campaign_source-medium report
+- Fixed flat report not working for campaign_name and campaign_source-medium report
 
 #### 5.0.2
 - Archiving: Ensure parameter is provided in correct type
