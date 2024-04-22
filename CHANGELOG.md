@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.0.4
+- Added plugin category for Marketplace
+
 #### 5.0.3 
 - Fixed flat report not working for campaign_name and campaign_source-medium report
 
