@@ -1054,7 +1054,7 @@
 	</row>
 	<row>
 		<idSite>1</idSite>
-		<idVisit>20</idVisit>
+		<idVisit>35</idVisit>
 		<visitIp>156.5.3.2</visitIp>
 		
 		<fingerprint>e16cf2bbaeea2c88</fingerprint>
@@ -1062,16 +1062,16 @@
 			<row>
 				<type>action</type>
 				<url>http://example.com/</url>
-				<pageTitle>Coming back with another campaign</pageTitle>
+				<pageTitle>Coming back with another campaign 17th</pageTitle>
 				<pageIdAction>8</pageIdAction>
 				
 				
-				<pageId>21</pageId>
+				<pageId>36</pageId>
 				<bandwidth />
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<pageviewPosition>1</pageviewPosition>
-				<title>Coming back with another campaign</title>
+				<title>Coming back with another campaign 17th</title>
 				<subtitle>http://example.com/</subtitle>
 				<icon />
 				<iconSVG>plugins/Morpheus/images/action.svg</iconSVG>
@@ -1098,11 +1098,11 @@
 		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
-		<visitCount>3</visitCount>
+		<visitCount>11</visitCount>
 		<visitEcommerceStatus>none</visitEcommerceStatus>
 		<visitEcommerceStatusIcon />
 		<daysSinceFirstVisit>0</daysSinceFirstVisit>
-		<secondsSinceFirstVisit>6840</secondsSinceFirstVisit>
+		<secondsSinceFirstVisit>6848</secondsSinceFirstVisit>
 		<daysSinceLastEcommerceOrder>0</daysSinceLastEcommerceOrder>
 		<secondsSinceLastEcommerceOrder />
 		<visitDuration>0</visitDuration>
@@ -1112,8 +1112,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>october_offer</referrerName>
-		<referrerKeyword>mot_clé_pépère</referrerKeyword>
+		<referrerName>17th</referrerName>
+		<referrerKeyword>keyword h</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -1159,7 +1159,7 @@
 		<visitLocalTime>12:34:06</visitLocalTime>
 		<visitLocalHour>12</visitLocalHour>
 		<daysSinceLastVisit>0</daysSinceLastVisit>
-		<secondsSinceLastVisit>6120</secondsSinceLastVisit>
+		<secondsSinceLastVisit>1</secondsSinceLastVisit>
 		<resolution>1024x768</resolution>
 		<plugins>cookie, flash, java</plugins>
 		<pluginsIcons>
@@ -1178,18 +1178,18 @@
 		</pluginsIcons>
 		<customVariables>
 		</customVariables>
-		<campaignId>campaign_id_kaboom</campaignId>
+		<campaignId>cid8</campaignId>
 		<campaignContent>none</campaignContent>
-		<campaignKeyword>mot_clé_pépère</campaignKeyword>
+		<campaignKeyword>keyword h</campaignKeyword>
 		<campaignMedium>email</campaignMedium>
-		<campaignName>october_offer</campaignName>
-		<campaignSource>newsletter_6</campaignSource>
-		<campaignGroup>group 1</campaignGroup>
-		<campaignPlacement>google ads</campaignPlacement>
+		<campaignName>17th</campaignName>
+		<campaignSource>newsletter_17</campaignSource>
+		<campaignGroup>cg8</campaignGroup>
+		<campaignPlacement>top-right</campaignPlacement>
 	</row>
 	<row>
 		<idSite>1</idSite>
-		<idVisit>28</idVisit>
+		<idVisit>34</idVisit>
 		<visitIp>156.5.3.2</visitIp>
 		
 		<fingerprint>e16cf2bbaeea2c88</fingerprint>
@@ -1197,16 +1197,16 @@
 			<row>
 				<type>action</type>
 				<url>http://example.com/</url>
-				<pageTitle>Coming back with another campaign 10th</pageTitle>
+				<pageTitle>Coming back with another campaign 16th</pageTitle>
 				<pageIdAction>8</pageIdAction>
 				
 				
-				<pageId>29</pageId>
+				<pageId>35</pageId>
 				<bandwidth />
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<pageviewPosition>1</pageviewPosition>
-				<title>Coming back with another campaign 10th</title>
+				<title>Coming back with another campaign 16th</title>
 				<subtitle>http://example.com/</subtitle>
 				<icon />
 				<iconSVG>plugins/Morpheus/images/action.svg</iconSVG>
@@ -1233,11 +1233,11 @@
 		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
-		<visitCount>4</visitCount>
+		<visitCount>10</visitCount>
 		<visitEcommerceStatus>none</visitEcommerceStatus>
 		<visitEcommerceStatusIcon />
 		<daysSinceFirstVisit>0</daysSinceFirstVisit>
-		<secondsSinceFirstVisit>6840</secondsSinceFirstVisit>
+		<secondsSinceFirstVisit>6847</secondsSinceFirstVisit>
 		<daysSinceLastEcommerceOrder>0</daysSinceLastEcommerceOrder>
 		<secondsSinceLastEcommerceOrder />
 		<visitDuration>0</visitDuration>
@@ -1247,8 +1247,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>10th</referrerName>
-		<referrerKeyword>keyword a</referrerKeyword>
+		<referrerName>16th</referrerName>
+		<referrerKeyword>keyword g</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -1294,7 +1294,7 @@
 		<visitLocalTime>12:34:06</visitLocalTime>
 		<visitLocalHour>12</visitLocalHour>
 		<daysSinceLastVisit>0</daysSinceLastVisit>
-		<secondsSinceLastVisit>0</secondsSinceLastVisit>
+		<secondsSinceLastVisit>1</secondsSinceLastVisit>
 		<resolution>1024x768</resolution>
 		<plugins>cookie, flash, java</plugins>
 		<pluginsIcons>
@@ -1313,18 +1313,18 @@
 		</pluginsIcons>
 		<customVariables>
 		</customVariables>
-		<campaignId>cid1</campaignId>
+		<campaignId>cid7</campaignId>
 		<campaignContent>none</campaignContent>
-		<campaignKeyword>keyword a</campaignKeyword>
+		<campaignKeyword>keyword g</campaignKeyword>
 		<campaignMedium>email</campaignMedium>
-		<campaignName>10th</campaignName>
-		<campaignSource>newsletter_10</campaignSource>
-		<campaignGroup>cg1</campaignGroup>
-		<campaignPlacement>bottom</campaignPlacement>
+		<campaignName>16th</campaignName>
+		<campaignSource>newsletter_16</campaignSource>
+		<campaignGroup>cg7</campaignGroup>
+		<campaignPlacement>bottom-left</campaignPlacement>
 	</row>
 	<row>
 		<idSite>1</idSite>
-		<idVisit>29</idVisit>
+		<idVisit>33</idVisit>
 		<visitIp>156.5.3.2</visitIp>
 		
 		<fingerprint>e16cf2bbaeea2c88</fingerprint>
@@ -1332,16 +1332,16 @@
 			<row>
 				<type>action</type>
 				<url>http://example.com/</url>
-				<pageTitle>Coming back with another campaign 11th</pageTitle>
+				<pageTitle>Coming back with another campaign 15th</pageTitle>
 				<pageIdAction>8</pageIdAction>
 				
 				
-				<pageId>30</pageId>
+				<pageId>34</pageId>
 				<bandwidth />
 				<timeSpent>0</timeSpent>
 				<timeSpentPretty>0s</timeSpentPretty>
 				<pageviewPosition>1</pageviewPosition>
-				<title>Coming back with another campaign 11th</title>
+				<title>Coming back with another campaign 15th</title>
 				<subtitle>http://example.com/</subtitle>
 				<icon />
 				<iconSVG>plugins/Morpheus/images/action.svg</iconSVG>
@@ -1368,11 +1368,11 @@
 		<visitorTypeIcon>plugins/Live/images/returningVisitor.png</visitorTypeIcon>
 		<visitConverted>0</visitConverted>
 		<visitConvertedIcon />
-		<visitCount>5</visitCount>
+		<visitCount>9</visitCount>
 		<visitEcommerceStatus>none</visitEcommerceStatus>
 		<visitEcommerceStatusIcon />
 		<daysSinceFirstVisit>0</daysSinceFirstVisit>
-		<secondsSinceFirstVisit>6840</secondsSinceFirstVisit>
+		<secondsSinceFirstVisit>6846</secondsSinceFirstVisit>
 		<daysSinceLastEcommerceOrder>0</daysSinceLastEcommerceOrder>
 		<secondsSinceLastEcommerceOrder />
 		<visitDuration>0</visitDuration>
@@ -1382,8 +1382,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>11th</referrerName>
-		<referrerKeyword>keyword b</referrerKeyword>
+		<referrerName>15th</referrerName>
+		<referrerKeyword>keyword f</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -1429,7 +1429,7 @@
 		<visitLocalTime>12:34:06</visitLocalTime>
 		<visitLocalHour>12</visitLocalHour>
 		<daysSinceLastVisit>0</daysSinceLastVisit>
-		<secondsSinceLastVisit>0</secondsSinceLastVisit>
+		<secondsSinceLastVisit>1</secondsSinceLastVisit>
 		<resolution>1024x768</resolution>
 		<plugins>cookie, flash, java</plugins>
 		<pluginsIcons>
@@ -1448,13 +1448,13 @@
 		</pluginsIcons>
 		<customVariables>
 		</customVariables>
-		<campaignId>cid2</campaignId>
+		<campaignId>cid6</campaignId>
 		<campaignContent>none</campaignContent>
-		<campaignKeyword>keyword b</campaignKeyword>
+		<campaignKeyword>keyword f</campaignKeyword>
 		<campaignMedium>email</campaignMedium>
-		<campaignName>11th</campaignName>
-		<campaignSource>newsletter_11</campaignSource>
-		<campaignGroup>cg2</campaignGroup>
-		<campaignPlacement>top</campaignPlacement>
+		<campaignName>15th</campaignName>
+		<campaignSource>newsletter_15</campaignSource>
+		<campaignGroup>cg6</campaignGroup>
+		<campaignPlacement>right</campaignPlacement>
 	</row>
 </result>
