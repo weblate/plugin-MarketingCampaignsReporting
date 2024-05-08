@@ -71,14 +71,15 @@ class TrackAdvancedCampaigns extends Fixture
         $this->trackSeventhVisit_withGoalConversion($t, $dateTime);
         $this->trackEigthVisit_withEcommerceAbandonedCart($t, $dateTime);
         $this->trackNinthVisit_withEcommerceOrder($t, $dateTime);
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='10th', $source = 'newsletter_10', 'keyword a', 'cid1', 'cg1', 'bottom');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='11th', $source = 'newsletter_11', 'keyword b', 'cid2', 'cg2', 'top');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='12th', $source = 'newsletter_12', 'keyword c', 'cid3', 'cg3', 'middle');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='13th', $source = 'newsletter_13', 'keyword d', 'cid4', 'cg4', 'center');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='14th', $source = 'newsletter_14', 'keyword e', 'cid5', 'cg5', 'left');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='15th', $source = 'newsletter_15', 'keyword f', 'cid6', 'cg6', 'right');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='16th', $source = 'newsletter_16', 'keyword g', 'cid7', 'cg7', 'bottom-left');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName='17th', $source = 'newsletter_17', 'keyword h', 'cid8', 'cg8', 'top-right');
+        $counter = 1;
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='10th', $source = 'newsletter_10', 'keyword a', 'cid1', 'cg1', 'bottom');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='11th', $source = 'newsletter_11', 'keyword b', 'cid2', 'cg2', 'top');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='12th', $source = 'newsletter_12', 'keyword c', 'cid3', 'cg3', 'middle');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='13th', $source = 'newsletter_13', 'keyword d', 'cid4', 'cg4', 'center');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='14th', $source = 'newsletter_14', 'keyword e', 'cid5', 'cg5', 'left');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='15th', $source = 'newsletter_15', 'keyword f', 'cid6', 'cg6', 'right');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='16th', $source = 'newsletter_16', 'keyword g', 'cid7', 'cg7', 'bottom-left');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='17th', $source = 'newsletter_17', 'keyword h', 'cid8', 'cg8', 'top-right');
     }
 
     public function tearDown(): void
@@ -277,8 +278,10 @@ class TrackAdvancedCampaigns extends Fixture
      * @param $source
      * @throws \Exception
      */
-    protected function trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $campaignName, $source, $keyword, $campaignId, $campaignGroup, $campaignPlacement)
+    protected function trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter, $campaignName, $source, $keyword, $campaignId, $campaignGroup, $campaignPlacement)
     {
+        // add seconds to timestamp based on counter, to ensure visits are not tracked on the exact same time
+        $dateTime = Date::factory($dateTime)->addPeriod($counter, 'SECOND')->getDatetime();
         $this->moveTimeForward($t, 2, $dateTime);
         $url = $this->getLandingUrlWithCampaignParams(
             $name = $campaignName,
