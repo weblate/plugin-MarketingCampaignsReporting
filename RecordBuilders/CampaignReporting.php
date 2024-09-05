@@ -76,7 +76,9 @@ class CampaignReporting extends RecordBuilder
     protected function aggregateFromLogs(LogAggregator $logAggregator, array $records, $dimensions, $table, $aggregatorMethod): void
     {
         $whereClause = $table . ".referer_type = " . Common::REFERRER_TYPE_CAMPAIGN;
-        $query       = $logAggregator->$aggregatorMethod($dimensions, $whereClause);
+        $query = $aggregatorMethod === 'queryConversionsByDimension'
+            ? $logAggregator->$aggregatorMethod($dimensions, $whereClause, [], [], false, false, true)
+            : $logAggregator->$aggregatorMethod($dimensions, $whereClause);
 
         $recordToDimensions = $this->getRecordToDimensions();
 
