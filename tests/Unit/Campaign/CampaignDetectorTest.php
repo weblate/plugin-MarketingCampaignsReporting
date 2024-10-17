@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -152,5 +153,4 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
 
         return $mock;
     }
-
 }

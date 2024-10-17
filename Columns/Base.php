@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -52,7 +53,6 @@ abstract class Base extends VisitDimension
             // If for some reason a campaign was detected in Core Tracker
             // but not here, copy that campaign to the Advanced Campaign
             if ($visitProperties['referer_type'] == Common::REFERRER_TYPE_CAMPAIGN) {
-
                 $campaignDimensions = array(
                     (new CampaignName())->getColumnName() => $visitProperties['referer_name']
                 );

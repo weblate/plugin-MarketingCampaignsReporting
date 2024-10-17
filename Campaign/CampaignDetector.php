@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -29,7 +30,8 @@ class CampaignDetector implements CampaignDetectorInterface
         $landingUrl       = PageUrl::cleanupUrl($landingUrl);
         $landingUrlParsed = parse_url($landingUrl);
 
-        if (!isset($landingUrlParsed['query'])
+        if (
+            !isset($landingUrlParsed['query'])
             && !isset($landingUrlParsed['fragment'])
         ) {
             return false;

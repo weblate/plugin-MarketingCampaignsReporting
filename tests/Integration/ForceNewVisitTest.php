@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -212,8 +213,12 @@ class ForceNewVisitTest extends IntegrationTestCase
 
     private function assertVisits($visitsExpected, $uniqueVisitsExpected, $actionsExpected)
     {
-        $counters = LiveAPI::getInstance()->getCounters($this->idSite, 2880, false,
-            ['visits', 'visitors', 'actions']);
+        $counters = LiveAPI::getInstance()->getCounters(
+            $this->idSite,
+            2880,
+            false,
+            ['visits', 'visitors', 'actions']
+        );
 
         $this->assertEquals($visitsExpected, $counters[0]['visits']);
         $this->assertEquals($uniqueVisitsExpected, $counters[0]['visitors']);

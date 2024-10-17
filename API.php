@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -156,7 +157,7 @@ class API extends \Piwik\Plugin\API
     {
         if ($dataTable instanceof DataTable) {
             return $dataTable->getRowsCount() == 0;
-        } else if ($dataTable instanceof DataTable\Map) {
+        } elseif ($dataTable instanceof DataTable\Map) {
             foreach ($dataTable->getDataTables() as $label => $childTable) {
                 if ($this->isTableEmpty($childTable)) {
                     return true;
@@ -168,9 +169,10 @@ class API extends \Piwik\Plugin\API
         }
     }
 
-    private function mergeDataTableMaps(DataTable\DataTableInterface $dataTable,
-                                        DataTable\DataTableInterface $referrersDataTable)
-    {
+    private function mergeDataTableMaps(
+        DataTable\DataTableInterface $dataTable,
+        DataTable\DataTableInterface $referrersDataTable
+    ) {
         if ($dataTable instanceof DataTable) {
             if ($this->isTableEmpty($dataTable)) {
                 $referrersDataTable->setAllTableMetadata($dataTable->getAllTableMetadata());
@@ -178,7 +180,7 @@ class API extends \Piwik\Plugin\API
             } else {
                 return $dataTable;
             }
-        } else if ($dataTable instanceof DataTable\Map) {
+        } elseif ($dataTable instanceof DataTable\Map) {
             foreach ($dataTable->getDataTables() as $label => $childTable) {
                 $newTable = $this->mergeDataTableMaps($childTable, $referrersDataTable->getTable($label));
                 $dataTable->addTable($newTable, $label);
@@ -188,5 +190,4 @@ class API extends \Piwik\Plugin\API
             throw new \Exception("Sanity check: unknown datatable type '" . get_class($dataTable) . "'.");
         }
     }
-
 }

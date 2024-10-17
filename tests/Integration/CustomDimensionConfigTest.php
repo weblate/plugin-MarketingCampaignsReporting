@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -30,7 +31,6 @@ use Piwik\Tests\Framework\TestCase\IntegrationTestCase;
  */
 class CustomDimensionConfigTest extends IntegrationTestCase
 {
-
     /** @var string $testUrl */
     private $testUrl;
 

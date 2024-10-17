@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -53,7 +54,8 @@ class CampaignName extends Base
         // we force a new visit if the referrer is a campaign and it's different than the currently recorded referrer.
         // if the current referrer is 'direct entry', however, we assume the referrer information was sent in a later request, and
         // we just update the existing referrer information instead of creating a visit.
-        if (!empty($campaignDimensions)
+        if (
+            !empty($campaignDimensions)
             && $this->isCampaignInformationNew($visitor, $campaignDimensions)
         ) {
             Common::printDebug("Existing visit detected, but creating new visit because campaign information is different than last action.");
