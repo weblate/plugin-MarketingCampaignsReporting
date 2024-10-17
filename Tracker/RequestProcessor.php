@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -32,9 +33,11 @@ class RequestProcessor extends Tracker\RequestProcessor
         $campaignGroup     = $visitProperties->getProperty((new CampaignGroup())->getColumnName());
         $campaignPlacement = $visitProperties->getProperty((new CampaignPlacement())->getColumnName());
 
-        if (!empty($campaignContent) || !empty($campaignId) || !empty($campaignKeyword) ||
+        if (
+            !empty($campaignContent) || !empty($campaignId) || !empty($campaignKeyword) ||
             !empty($campaignMedium) || !empty($campaignName) || !empty($campaignSource) ||
-            !empty($campaignGroup) || !empty($campaignPlacement)) {
+            !empty($campaignGroup) || !empty($campaignPlacement)
+        ) {
             $visitProperties->setProperty('referer_type', Common::REFERRER_TYPE_CAMPAIGN);
         }
 
