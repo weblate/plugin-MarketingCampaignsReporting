@@ -20,6 +20,7 @@ use Piwik\DataAccess\LogAggregator;
 use Piwik\DataTable;
 use Piwik\Metrics;
 use Piwik\Plugins\MarketingCampaignsReporting\Archiver;
+use Piwik\Version;
 
 class CampaignReporting extends RecordBuilder
 {
