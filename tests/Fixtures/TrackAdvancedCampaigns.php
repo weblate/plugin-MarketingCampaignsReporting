@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -23,8 +24,8 @@ class TrackAdvancedCampaigns extends Fixture
 
     private $orderIndex;
 
-    const THIS_PAGE_VIEW_IS_GOAL_CONVERSION = 'this is a goal conversion';
-    
+    public const THIS_PAGE_VIEW_IS_GOAL_CONVERSION = 'this is a goal conversion';
+
     /**
      * @var int
      */
@@ -72,14 +73,14 @@ class TrackAdvancedCampaigns extends Fixture
         $this->trackEigthVisit_withEcommerceAbandonedCart($t, $dateTime);
         $this->trackNinthVisit_withEcommerceOrder($t, $dateTime);
         $counter = 1;
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='10th', $source = 'newsletter_10', 'keyword a', 'cid1', 'cg1', 'bottom');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='11th', $source = 'newsletter_11', 'keyword b', 'cid2', 'cg2', 'top');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='12th', $source = 'newsletter_12', 'keyword c', 'cid3', 'cg3', 'middle');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='13th', $source = 'newsletter_13', 'keyword d', 'cid4', 'cg4', 'center');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='14th', $source = 'newsletter_14', 'keyword e', 'cid5', 'cg5', 'left');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='15th', $source = 'newsletter_15', 'keyword f', 'cid6', 'cg6', 'right');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='16th', $source = 'newsletter_16', 'keyword g', 'cid7', 'cg7', 'bottom-left');
-        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName='17th', $source = 'newsletter_17', 'keyword h', 'cid8', 'cg8', 'top-right');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '10th', $source = 'newsletter_10', 'keyword a', 'cid1', 'cg1', 'bottom');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '11th', $source = 'newsletter_11', 'keyword b', 'cid2', 'cg2', 'top');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '12th', $source = 'newsletter_12', 'keyword c', 'cid3', 'cg3', 'middle');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '13th', $source = 'newsletter_13', 'keyword d', 'cid4', 'cg4', 'center');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '14th', $source = 'newsletter_14', 'keyword e', 'cid5', 'cg5', 'left');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '15th', $source = 'newsletter_15', 'keyword f', 'cid6', 'cg6', 'right');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '16th', $source = 'newsletter_16', 'keyword g', 'cid7', 'cg7', 'bottom-left');
+        $this->trackNthVisit_withDimensionsInUrlHash($t, $dateTime, $counter++, $campaignName = '17th', $source = 'newsletter_17', 'keyword h', 'cid8', 'cg8', 'top-right');
     }
 
     public function tearDown(): void
@@ -100,8 +101,17 @@ class TrackAdvancedCampaigns extends Fixture
      */
     protected function getLandingUrlWithCampaignParams($name, $keyword, $source, $medium, $content, $campaignId, $campaignGroup, $campaignPlacement)
     {
-        return sprintf('http://example.com/?utm_campaign=%s&utm_term=%s&utm_source=%s&utm_medium=%s&utm_content=%s&utm_id=%s&mtm_group=%s&mtm_placement=%s',
-            $name, $keyword, $source, $medium, $content, $campaignId, $campaignGroup, $campaignPlacement);
+        return sprintf(
+            'http://example.com/?utm_campaign=%s&utm_term=%s&utm_source=%s&utm_medium=%s&utm_content=%s&utm_id=%s&mtm_group=%s&mtm_placement=%s',
+            $name,
+            $keyword,
+            $source,
+            $medium,
+            $content,
+            $campaignId,
+            $campaignGroup,
+            $campaignPlacement
+        );
     }
 
     private function setUpWebsite()
@@ -110,12 +120,22 @@ class TrackAdvancedCampaigns extends Fixture
         $this->assertTrue($idSite === $this->idSite);
 
         $this->idGoal1 = \Piwik\Plugins\Goals\API::getInstance()->addGoal(
-            $this->idSite, 'title match', 'title', self::THIS_PAGE_VIEW_IS_GOAL_CONVERSION, 'contains',
-            $caseSensitive = false, $revenue = 10, $allowMultipleConversions = true
+            $this->idSite,
+            'title match',
+            'title',
+            self::THIS_PAGE_VIEW_IS_GOAL_CONVERSION,
+            'contains',
+            $caseSensitive = false,
+            $revenue = 10,
+            $allowMultipleConversions = true
         );
 
         $this->idGoal2 = \Piwik\Plugins\Goals\API::getInstance()->addGoal(
-            $this->idSite, 'title match', 'manually', '', 'contains'
+            $this->idSite,
+            'title match',
+            'manually',
+            '',
+            'contains'
         );
     }
 
@@ -294,7 +314,7 @@ class TrackAdvancedCampaigns extends Fixture
             $campaignPlacement
         );
         $t->setUrl($url);
-        self::checkResponse($t->doTrackPageView('Coming back with another campaign '.$campaignName));
+        self::checkResponse($t->doTrackPageView('Coming back with another campaign ' . $campaignName));
     }
 
     /**
@@ -344,26 +364,24 @@ class TrackAdvancedCampaigns extends Fixture
             'observers.global' => \Piwik\DI::add(array(
                 array(
                     'Environment.bootstrapped', \Piwik\DI::value(function () use ($testVars) {
-                    $plugins = Piwik\Config::getInstance()->Plugins['Plugins'];
-                    $index   = array_search('MarketingCampaignsReporting', $plugins);
+                        $plugins = Piwik\Config::getInstance()->Plugins['Plugins'];
+                        $index   = array_search('MarketingCampaignsReporting', $plugins);
 
-                    if ($testVars->_disableMarketingCampaignsReporting) {
-                        if ($index !== false) {
-                            unset($plugins[$index]);
+                        if ($testVars->_disableMarketingCampaignsReporting) {
+                            if ($index !== false) {
+                                unset($plugins[$index]);
+                            }
+                        } else {
+                            if ($index === false) {
+                                $plugins[] = 'MarketingCampaignsReporting';
+                            }
                         }
-                    } else {
-                        if ($index === false) {
-                            $plugins[] = 'MarketingCampaignsReporting';
-                        }
-                    }
 
-                    Piwik\Config::getInstance()->Plugins['Plugins'] = $plugins;
-                }
-                )),
+                        Piwik\Config::getInstance()->Plugins['Plugins'] = $plugins;
+                    })),
             )),
 
             'advanced_campaign_reporting.uri_parameters.campaign_name' => \Piwik\DI::value([(new Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignName())->getColumnName() => ['mtm_campaign', 'matomo_campaign', 'mtm_cpn', 'pk_campaign', 'piwik_campaign', 'pk_cpn', 'utm_campaign', 'my_campaign']])
         );
     }
 }
-

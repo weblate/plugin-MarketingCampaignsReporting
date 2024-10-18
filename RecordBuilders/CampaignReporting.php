@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -104,7 +105,7 @@ class CampaignReporting extends RecordBuilder
                         Metrics::INDEX_BOUNCE_COUNT => $row[Metrics::INDEX_BOUNCE_COUNT],
                         Metrics::INDEX_NB_VISITS_CONVERTED => $row[Metrics::INDEX_NB_VISITS_CONVERTED],
                     ];
-                } else if ($aggregatorMethod == 'queryConversionsByDimension') {
+                } elseif ($aggregatorMethod == 'queryConversionsByDimension') {
                     $idGoal = (int) $row['idgoal'];
                     $columns = [
                         Metrics::INDEX_GOALS => [
@@ -133,7 +134,8 @@ class CampaignReporting extends RecordBuilder
     {
         $labels = [];
         foreach ($dimensionsAsLabel as $dimensionLabelPart) {
-            if (isset($row[$dimensionLabelPart])
+            if (
+                isset($row[$dimensionLabelPart])
                 && $row[$dimensionLabelPart] != ''
             ) {
                 $labels[] = $row[$dimensionLabelPart];

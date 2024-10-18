@@ -1,13 +1,23 @@
 {
     "MarketingCampaignsReporting": {
-        "CombinedSourceMedium": "Zdroj - médium",
         "CampaignId": "Id kampaně",
+        "CampaignIds": "Identifikace kampaně",
         "CombinedKeywordContent": "Klíčové slovo - obsah",
-        "Names": "Jména kampaní",
-        "Keywords": "Klíčová slova kampaně",
-        "Sources": "Zdroje kampaní",
-        "Mediums": "Média kampaně",
+        "CombinedSourceMedium": "Zdroj - médium",
+        "CombinedSourcesMediums": "Zdroj kampaně - médium",
+        "Content": "Obsah kampaně",
         "Contents": "Obsah kampaně",
-        "CombinedSourcesMediums": "Zdroj kampaně - médium"
+        "Group": "Skupina kampaně",
+        "Groups": "Skupiny kampaně",
+        "Keyword": "Klíčové slovo kampaně",
+        "Keywords": "Klíčová slova kampaně",
+        "Medium": "Médium kampaně",
+        "Mediums": "Média kampaně",
+        "Name": "Název kampaně",
+        "Names": "Jména kampaní",
+        "Placement": "Umístění kampaně",
+        "Placements": "Umístění kampaní",
+        "Source": "Zdroj kampaně",
+        "Sources": "Zdroje kampaní"
     }
 }

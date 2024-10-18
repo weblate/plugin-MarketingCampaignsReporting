@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -13,15 +14,15 @@ namespace Piwik\Plugins\MarketingCampaignsReporting;
 
 class Archiver extends \Piwik\Plugin\Archiver
 {
-    const CAMPAIGN_ID_RECORD_NAME = 'MarketingCampaignsReporting_Id';
-    const CAMPAIGN_NAME_RECORD_NAME = 'MarketingCampaignsReporting_Name';
-    const CAMPAIGN_KEYWORD_RECORD_NAME = 'MarketingCampaignsReporting_Keyword';
-    const CAMPAIGN_SOURCE_RECORD_NAME = 'MarketingCampaignsReporting_Source';
-    const CAMPAIGN_MEDIUM_RECORD_NAME = 'MarketingCampaignsReporting_Medium';
-    const CAMPAIGN_CONTENT_RECORD_NAME = 'MarketingCampaignsReporting_Content';
-    const CAMPAIGN_GROUP_RECORD_NAME = 'MarketingCampaignsReporting_Group';
-    const CAMPAIGN_PLACEMENT_RECORD_NAME = 'MarketingCampaignsReporting_Placement';
-    const HIERARCHICAL_SOURCE_MEDIUM_RECORD_NAME = 'MarketingCampaignsReporting_SourceMedium_Name';
+    public const CAMPAIGN_ID_RECORD_NAME = 'MarketingCampaignsReporting_Id';
+    public const CAMPAIGN_NAME_RECORD_NAME = 'MarketingCampaignsReporting_Name';
+    public const CAMPAIGN_KEYWORD_RECORD_NAME = 'MarketingCampaignsReporting_Keyword';
+    public const CAMPAIGN_SOURCE_RECORD_NAME = 'MarketingCampaignsReporting_Source';
+    public const CAMPAIGN_MEDIUM_RECORD_NAME = 'MarketingCampaignsReporting_Medium';
+    public const CAMPAIGN_CONTENT_RECORD_NAME = 'MarketingCampaignsReporting_Content';
+    public const CAMPAIGN_GROUP_RECORD_NAME = 'MarketingCampaignsReporting_Group';
+    public const CAMPAIGN_PLACEMENT_RECORD_NAME = 'MarketingCampaignsReporting_Placement';
+    public const HIERARCHICAL_SOURCE_MEDIUM_RECORD_NAME = 'MarketingCampaignsReporting_SourceMedium_Name';
 
-    const SEPARATOR_COMBINED_DIMENSIONS = " - ";
+    public const SEPARATOR_COMBINED_DIMENSIONS = " - ";
 }
