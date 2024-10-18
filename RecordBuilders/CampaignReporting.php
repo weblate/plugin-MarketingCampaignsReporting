@@ -77,7 +77,7 @@ class CampaignReporting extends RecordBuilder
     protected function aggregateFromLogs(LogAggregator $logAggregator, array $records, $dimensions, $table, $aggregatorMethod): void
     {
         $whereClause = $table . ".referer_type = " . Common::REFERRER_TYPE_CAMPAIGN;
-        $query = $aggregatorMethod === 'queryConversionsByDimension' && method_exists(\Piwik\SettingsPiwik::class, 'isForceSiteDateIndexEnabled')
+        $query = $aggregatorMethod === 'queryConversionsByDimension' && version_compare(Version::VERSION, '5.2.0-b1', '>=')
             ? $logAggregator->$aggregatorMethod($dimensions, $whereClause, [], [], false, false, true)
             : $logAggregator->$aggregatorMethod($dimensions, $whereClause);
 
