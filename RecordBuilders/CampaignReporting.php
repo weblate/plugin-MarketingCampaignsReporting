@@ -21,6 +21,7 @@ use Piwik\DataAccess\LogAggregator;
 use Piwik\DataTable;
 use Piwik\Metrics;
 use Piwik\Plugins\MarketingCampaignsReporting\Archiver;
+use Piwik\Version;
 
 class CampaignReporting extends RecordBuilder
 {
@@ -77,7 +78,9 @@ class CampaignReporting extends RecordBuilder
     protected function aggregateFromLogs(LogAggregator $logAggregator, array $records, $dimensions, $table, $aggregatorMethod): void
     {
         $whereClause = $table . ".referer_type = " . Common::REFERRER_TYPE_CAMPAIGN;
-        $query       = $logAggregator->$aggregatorMethod($dimensions, $whereClause);
+        $query = $aggregatorMethod === 'queryConversionsByDimension' && version_compare(Version::VERSION, '5.2.0-b6', '>=')
+            ? $logAggregator->$aggregatorMethod($dimensions, $whereClause, [], [], false, false, true)
+            : $logAggregator->$aggregatorMethod($dimensions, $whereClause);
 
         $recordToDimensions = $this->getRecordToDimensions();
 
