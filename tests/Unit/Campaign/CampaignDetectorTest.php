@@ -30,7 +30,6 @@ use Piwik\Tracker\Request;
  */
 class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
 {
-
     private static $fixture;
     public static function setUpBeforeClass(): void
     {
@@ -65,6 +64,10 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetectCampaignFromRequestRetainCase(Request $request, array $campaignParams, $expectedOutput)
     {
+        $systemSettings = StaticContainer::get(SystemSettings::class);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
+        $systemSettings->save();
         $detector = new CampaignDetector();
         $dimensions = $detector->detectCampaignFromRequest($request, $campaignParams);
 
