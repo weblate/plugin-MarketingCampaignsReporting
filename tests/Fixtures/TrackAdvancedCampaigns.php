@@ -13,6 +13,7 @@
 namespace Piwik\Plugins\MarketingCampaignsReporting\tests\Fixtures;
 
 use Piwik;
+use Piwik\Container\StaticContainer;
 use Piwik\Date;
 use Piwik\Tests\Framework\Fixture;
 
@@ -38,6 +39,11 @@ class TrackAdvancedCampaigns extends Fixture
     public function setUp(): void
     {
         Piwik\Plugin\Manager::getInstance()->activatePlugin('MarketingCampaignsReporting');
+
+        $systemSettings = StaticContainer::get(SystemSettings::class);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(false);
+        $systemSettings->save();
 
         $this->orderIndex = 0;
 
