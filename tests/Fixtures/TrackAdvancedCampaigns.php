@@ -13,9 +13,7 @@
 namespace Piwik\Plugins\MarketingCampaignsReporting\tests\Fixtures;
 
 use Piwik;
-use Piwik\Container\StaticContainer;
 use Piwik\Date;
-use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 use Piwik\Tests\Framework\Fixture;
 
 class TrackAdvancedCampaigns extends Fixture
@@ -47,11 +45,6 @@ class TrackAdvancedCampaigns extends Fixture
 
         $this->trackCampaignVisits($disablePlugin = true, $this->dateTime);
         $this->trackCampaignVisits($disablePlugin = false, $this->dateTimeWithPluginEnabled);
-
-        $systemSettings = StaticContainer::get(SystemSettings::class);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
-        $systemSettings->save();
     }
 
     public function trackCampaignVisits($disablePlugin, $dateTime)

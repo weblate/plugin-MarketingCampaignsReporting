@@ -66,10 +66,10 @@ describe("MarketingCampaignsReporting_Reports", function () {
         expect(await report.screenshot()).to.matchImage('visitor_log');
     });
 
-    it('should display the settings page', async () => {
+    it('should display the settings page', async () => {onExport)';
         await page.goto('?module=CoreAdminHome&action=generalSettings&idSite=1&period=day&date=yesterday');
+        await page.waitForTimeout(1000);
         await page.waitForNetworkIdle();
-        var report = await page.$('.card-content:contains(MarketingCampaignsReporting)');
-        expect(await report.screenshot()).to.matchImage('settings_page');
+        expect(await page.screenshotSelector(selector)).to.matchImage('settings_page');
     });
 });

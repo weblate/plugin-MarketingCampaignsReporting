@@ -13,7 +13,9 @@
 namespace Piwik\Plugins\MarketingCampaignsReporting\tests\System;
 
 use Piwik\Cache;
+use Piwik\Container\StaticContainer;
 use Piwik\Plugin\Manager;
+use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 use Piwik\Plugins\MarketingCampaignsReporting\tests\Fixtures\TrackAdvancedCampaigns;
 use Piwik\Tests\Framework\TestCase\SystemTestCase;
 use Piwik\Version;
@@ -45,6 +47,10 @@ class TrackSeveralCampaignsTest extends SystemTestCase
      */
     public function testApi($api, $params)
     {
+        $systemSettings = StaticContainer::get(SystemSettings::class);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
+        $systemSettings->save();
         $this->runApiTests($api, $params);
     }
 
