@@ -18,6 +18,8 @@
         "Groups": "Campaign Groups",
         "Placements": "Campaign Placements",
         "CampaignIds": "Campaign Ids",
-        "CombinedSourcesMediums": "Campaign Source - Medium"
+        "CombinedSourcesMediums": "Campaign Source - Medium",
+        "DoNotChangeCaseOfUtmParametersTitle": "Retain campaign parameter capitalisation",
+        "DoNotChangeCaseOfUtmParametersDescription": "If enabled, Matomo will retain capitalisation of campaign parameters in order to support compatibility with various third party service providers, such as Google. Turning this setting off will turn all campaign parameters into lower case."
     }
 }

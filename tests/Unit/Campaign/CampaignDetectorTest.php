@@ -12,6 +12,7 @@
 
 namespace Piwik\Plugins\MarketingCampaignsReporting\tests\Unit\Campaign;
 
+use Piwik\Container\StaticContainer;
 use Piwik\Plugins\MarketingCampaignsReporting\Campaign\CampaignDetector;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignContent;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignId;
@@ -19,6 +20,7 @@ use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignKeyword;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignMedium;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignName;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignSource;
+use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 use Piwik\Tracker\Request;
 
 /**
@@ -35,10 +37,32 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetectCampaignFromRequest(Request $request, array $campaignParams, $expectedOutput)
     {
+        $systemSettings = StaticContainer::get(SystemSettings::class);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(false);
+        $systemSettings->save();
         $detector   = new CampaignDetector();
         $dimensions = $detector->detectCampaignFromRequest($request, $campaignParams);
 
-        $this->assertEquals($expectedOutput, $dimensions);
+        $this->assertSame($expectedOutput, $dimensions);
+    }
+
+    /**
+     * @dataProvider provideRequestDataRetainCase
+     * @param Request $request
+     * @param array   $campaignParams
+     * @param mixed   $expectedOutput
+     */
+    public function testDetectCampaignFromRequestRetainCase(Request $request, array $campaignParams, $expectedOutput)
+    {
+        $systemSettings = StaticContainer::get(SystemSettings::class);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
+        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
+        $systemSettings->save();
+        $detector   = new CampaignDetector();
+        $dimensions = $detector->detectCampaignFromRequest($request, $campaignParams);
+
+        $this->assertSame($expectedOutput, $dimensions);
     }
 
     /**
@@ -60,7 +84,7 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
         return [
             'normal query string'                         => [
                 'request'        => $this->createRequestMock(
-                    'http://example.com/?mtm_campaign=campName&mtm_kwd=sdf1'
+                    'http://example.com/?mtm_campaign=CAmpName&mtm_kwd=sdf1'
                 ),
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
@@ -95,6 +119,59 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
                     'campaign_name'    => 'campname2',
+                    'campaign_keyword' => 'sdf2'
+                ]
+            ],
+            'no query string'                             => [
+                'request'        => $this->createRequestMock(
+                    'https://whatever.com/cat1/cat2'
+                ),
+                'campaignParams' => $this->getCampaignParameters(),
+                'expectedOutput' => false
+            ]
+        ];
+    }
+
+    public function provideRequestDataRetainCase()
+    {
+        return [
+            'normal query string'                         => [
+                'request'        => $this->createRequestMock(
+                    'http://example.com/?mtm_campaign=campName&mtm_kwd=sdf1'
+                ),
+                'campaignParams' => $this->getCampaignParameters(),
+                'expectedOutput' => [
+                    'campaign_name'    => 'campName',
+                    'campaign_keyword' => 'sdf1'
+                ]
+            ],
+            'query string behind hash'                    => [
+                'request'        => $this->createRequestMock(
+                    'https://whatever.com/#/category/sub/1?mtm_campaign=campName2&mtm_kwd=Sdf2'
+                ),
+                'campaignParams' => $this->getCampaignParameters(),
+                'expectedOutput' => [
+                    'campaign_name'    => 'campName2',
+                    'campaign_keyword' => 'Sdf2'
+                ]
+            ],
+            'normal query string with google parameters'  => [
+                'request'        => $this->createRequestMock(
+                    'http://example.com/?utm_campaign=campName&utm_term=sdf1'
+                ),
+                'campaignParams' => $this->getCampaignParameters(),
+                'expectedOutput' => [
+                    'campaign_name'    => 'campName',
+                    'campaign_keyword' => 'sdf1'
+                ]
+            ],
+            'query string behind hash with google params' => [
+                'request'        => $this->createRequestMock(
+                    'https://whatever.com/#/category/sub/1?utm_campaign=CampName2&utm_term=sdf2'
+                ),
+                'campaignParams' => $this->getCampaignParameters(),
+                'expectedOutput' => [
+                    'campaign_name'    => 'CampName2',
                     'campaign_keyword' => 'sdf2'
                 ]
             ],
