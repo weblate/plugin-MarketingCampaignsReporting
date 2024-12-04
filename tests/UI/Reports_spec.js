@@ -66,7 +66,7 @@ describe("MarketingCampaignsReporting_Reports", function () {
         expect(await report.screenshot()).to.matchImage('visitor_log');
     });
 
-    it('should display the settings page', async () => {onExport)';
+    it('should display the settings page', async () => {
         await page.goto('?module=CoreAdminHome&action=generalSettings&idSite=1&period=day&date=yesterday');
         await page.waitForTimeout(1000);
         await page.waitForNetworkIdle();

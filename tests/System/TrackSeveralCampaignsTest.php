@@ -47,10 +47,6 @@ class TrackSeveralCampaignsTest extends SystemTestCase
      */
     public function testApi($api, $params)
     {
-        $systemSettings = StaticContainer::get(SystemSettings::class);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
-        $systemSettings->save();
         $this->runApiTests($api, $params);
     }
 
