@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <result>
 	<row>
-		<label>ecommerce_campaign</label>
+		<label>Ecommerce_campaign</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -30,10 +30,10 @@
 		</goals>
 		<nb_conversions>1</nb_conversions>
 		<revenue>555</revenue>
-		<segment>referrerType==campaign;referrerName==ecommerce_campaign</segment>
+		<segment>referrerType==campaign;referrerName==Ecommerce_campaign</segment>
 		<subtable>
 			<row>
-				<label>ecommerce_keyword</label>
+				<label>Ecommerce_keyword</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -266,7 +266,7 @@
 		</subtable>
 	</row>
 	<row>
-		<label>campaignnamedimension - no other dimension for this visit</label>
+		<label>CampaignNameDimension - No Other Dimension for this visit</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -275,10 +275,10 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==campaignnamedimension+-+no+other+dimension+for+this+visit</segment>
+		<segment>referrerType==campaign;referrerName==CampaignNameDimension+-+No+Other+Dimension+for+this+visit</segment>
 	</row>
 	<row>
-		<label>campaign_hashed</label>
+		<label>Campaign_Hashed</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -287,10 +287,10 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==campaign_hashed</segment>
+		<segment>referrerType==campaign;referrerName==Campaign_Hashed</segment>
 		<subtable>
 			<row>
-				<label>keyword from #hash tag parameter</label>
+				<label>Keyword from #hash tag parameter</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -303,7 +303,7 @@
 		</subtable>
 	</row>
 	<row>
-		<label>campaign_with_two_goals_conversions</label>
+		<label>Campaign_with_two_goals_conversions</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -313,131 +313,140 @@
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>1</nb_visits_converted>
 		<goals>
-			<row idgoal='1'>
-				<nb_conversions>2</nb_conversions>
-				<nb_visits_converted>1</nb_visits_converted>
-				<revenue>1111</revenue>
-			</row>
 			<row idgoal='2'>
 				<nb_conversions>1</nb_conversions>
 				<nb_visits_converted>1</nb_visits_converted>
 				<revenue>3333</revenue>
 			</row>
 		</goals>
-		<nb_conversions>3</nb_conversions>
-		<revenue>4444</revenue>
+		<nb_conversions>1</nb_conversions>
+		<revenue>3333</revenue>
+		<segment>referrerType==campaign;referrerName==Campaign_with_two_goals_conversions</segment>
+	</row>
+	<row>
+		<label>Default_Offer</label>
+		<nb_uniq_visitors>1</nb_uniq_visitors>
+		<nb_visits>1</nb_visits>
+		<nb_actions>1</nb_actions>
+		<nb_users>0</nb_users>
+		<max_actions>1</max_actions>
+		<sum_visit_length>0</sum_visit_length>
+		<bounce_count>1</bounce_count>
+		<nb_visits_converted>0</nb_visits_converted>
+		<segment>referrerType==campaign;referrerName==Default_Offer</segment>
+		<subtable>
+			<row>
+				<label>Not_An_Advanced_Campaign_At_first</label>
+				<nb_uniq_visitors>1</nb_uniq_visitors>
+				<nb_visits>1</nb_visits>
+				<nb_actions>1</nb_actions>
+				<nb_users>0</nb_users>
+				<max_actions>1</max_actions>
+				<sum_visit_length>0</sum_visit_length>
+				<bounce_count>1</bounce_count>
+				<nb_visits_converted>0</nb_visits_converted>
+			</row>
+		</subtable>
+	</row>
+	<row>
+		<label>Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAM</label>
+		<nb_uniq_visitors>1</nb_uniq_visitors>
+		<nb_visits>1</nb_visits>
+		<nb_actions>1</nb_actions>
+		<nb_users>0</nb_users>
+		<max_actions>1</max_actions>
+		<sum_visit_length>0</sum_visit_length>
+		<bounce_count>1</bounce_count>
+		<nb_visits_converted>0</nb_visits_converted>
+		<segment>referrerType==campaign;referrerName==Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAM</segment>
+		<subtable>
+			<row>
+				<label>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</label>
+				<nb_uniq_visitors>1</nb_uniq_visitors>
+				<nb_visits>1</nb_visits>
+				<nb_actions>1</nb_actions>
+				<nb_users>0</nb_users>
+				<max_actions>1</max_actions>
+				<sum_visit_length>0</sum_visit_length>
+				<bounce_count>1</bounce_count>
+				<nb_visits_converted>0</nb_visits_converted>
+			</row>
+		</subtable>
+	</row>
+	<row>
+		<label>November_Offer</label>
+		<nb_uniq_visitors>1</nb_uniq_visitors>
+		<nb_visits>1</nb_visits>
+		<nb_actions>1</nb_actions>
+		<nb_users>0</nb_users>
+		<max_actions>1</max_actions>
+		<sum_visit_length>0</sum_visit_length>
+		<bounce_count>1</bounce_count>
+		<nb_visits_converted>0</nb_visits_converted>
+		<segment>referrerType==campaign;referrerName==November_Offer</segment>
+		<subtable>
+			<row>
+				<label>Mot_clé_PÉPÈRE</label>
+				<nb_uniq_visitors>1</nb_uniq_visitors>
+				<nb_visits>1</nb_visits>
+				<nb_actions>1</nb_actions>
+				<nb_users>0</nb_users>
+				<max_actions>1</max_actions>
+				<sum_visit_length>0</sum_visit_length>
+				<bounce_count>1</bounce_count>
+				<nb_visits_converted>0</nb_visits_converted>
+			</row>
+		</subtable>
+	</row>
+	<row>
+		<label>October_Offer</label>
+		<nb_uniq_visitors>1</nb_uniq_visitors>
+		<nb_visits>1</nb_visits>
+		<nb_actions>1</nb_actions>
+		<nb_users>0</nb_users>
+		<max_actions>1</max_actions>
+		<sum_visit_length>0</sum_visit_length>
+		<bounce_count>1</bounce_count>
+		<nb_visits_converted>0</nb_visits_converted>
+		<segment>referrerType==campaign;referrerName==October_Offer</segment>
+		<subtable>
+			<row>
+				<label>Mot_clé_PÉPÈRE</label>
+				<nb_uniq_visitors>1</nb_uniq_visitors>
+				<nb_visits>1</nb_visits>
+				<nb_actions>1</nb_actions>
+				<nb_users>0</nb_users>
+				<max_actions>1</max_actions>
+				<sum_visit_length>0</sum_visit_length>
+				<bounce_count>1</bounce_count>
+				<nb_visits_converted>0</nb_visits_converted>
+			</row>
+		</subtable>
+	</row>
+	<row>
+		<label>SHOULD_BE_NEW_VISIT</label>
+		<nb_uniq_visitors>1</nb_uniq_visitors>
+		<nb_visits>1</nb_visits>
+		<nb_actions>1</nb_actions>
+		<nb_users>0</nb_users>
+		<max_actions>1</max_actions>
+		<sum_visit_length>0</sum_visit_length>
+		<bounce_count>1</bounce_count>
+		<nb_visits_converted>0</nb_visits_converted>
+		<segment>referrerType==campaign;referrerName==SHOULD_BE_NEW_VISIT</segment>
+	</row>
+	<row>
+		<label>campaign_with_two_goals_conversions</label>
+		<goals>
+			<row idgoal='1'>
+				<nb_conversions>2</nb_conversions>
+				<nb_visits_converted>1</nb_visits_converted>
+				<revenue>1111</revenue>
+			</row>
+		</goals>
+		<nb_conversions>2</nb_conversions>
+		<revenue>1111</revenue>
+		<nb_visits>0</nb_visits>
 		<segment>referrerType==campaign;referrerName==campaign_with_two_goals_conversions</segment>
-	</row>
-	<row>
-		<label>default_offer</label>
-		<nb_uniq_visitors>1</nb_uniq_visitors>
-		<nb_visits>1</nb_visits>
-		<nb_actions>1</nb_actions>
-		<nb_users>0</nb_users>
-		<max_actions>1</max_actions>
-		<sum_visit_length>0</sum_visit_length>
-		<bounce_count>1</bounce_count>
-		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==default_offer</segment>
-		<subtable>
-			<row>
-				<label>not_an_advanced_campaign_at_first</label>
-				<nb_uniq_visitors>1</nb_uniq_visitors>
-				<nb_visits>1</nb_visits>
-				<nb_actions>1</nb_actions>
-				<nb_users>0</nb_users>
-				<max_actions>1</max_actions>
-				<sum_visit_length>0</sum_visit_length>
-				<bounce_count>1</bounce_count>
-				<nb_visits_converted>0</nb_visits_converted>
-			</row>
-		</subtable>
-	</row>
-	<row>
-		<label>lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;nam</label>
-		<nb_uniq_visitors>1</nb_uniq_visitors>
-		<nb_visits>1</nb_visits>
-		<nb_actions>1</nb_actions>
-		<nb_users>0</nb_users>
-		<max_actions>1</max_actions>
-		<sum_visit_length>0</sum_visit_length>
-		<bounce_count>1</bounce_count>
-		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22nam</segment>
-		<subtable>
-			<row>
-				<label>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</label>
-				<nb_uniq_visitors>1</nb_uniq_visitors>
-				<nb_visits>1</nb_visits>
-				<nb_actions>1</nb_actions>
-				<nb_users>0</nb_users>
-				<max_actions>1</max_actions>
-				<sum_visit_length>0</sum_visit_length>
-				<bounce_count>1</bounce_count>
-				<nb_visits_converted>0</nb_visits_converted>
-			</row>
-		</subtable>
-	</row>
-	<row>
-		<label>november_offer</label>
-		<nb_uniq_visitors>1</nb_uniq_visitors>
-		<nb_visits>1</nb_visits>
-		<nb_actions>1</nb_actions>
-		<nb_users>0</nb_users>
-		<max_actions>1</max_actions>
-		<sum_visit_length>0</sum_visit_length>
-		<bounce_count>1</bounce_count>
-		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==november_offer</segment>
-		<subtable>
-			<row>
-				<label>mot_clé_pépère</label>
-				<nb_uniq_visitors>1</nb_uniq_visitors>
-				<nb_visits>1</nb_visits>
-				<nb_actions>1</nb_actions>
-				<nb_users>0</nb_users>
-				<max_actions>1</max_actions>
-				<sum_visit_length>0</sum_visit_length>
-				<bounce_count>1</bounce_count>
-				<nb_visits_converted>0</nb_visits_converted>
-			</row>
-		</subtable>
-	</row>
-	<row>
-		<label>october_offer</label>
-		<nb_uniq_visitors>1</nb_uniq_visitors>
-		<nb_visits>1</nb_visits>
-		<nb_actions>1</nb_actions>
-		<nb_users>0</nb_users>
-		<max_actions>1</max_actions>
-		<sum_visit_length>0</sum_visit_length>
-		<bounce_count>1</bounce_count>
-		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==october_offer</segment>
-		<subtable>
-			<row>
-				<label>mot_clé_pépère</label>
-				<nb_uniq_visitors>1</nb_uniq_visitors>
-				<nb_visits>1</nb_visits>
-				<nb_actions>1</nb_actions>
-				<nb_users>0</nb_users>
-				<max_actions>1</max_actions>
-				<sum_visit_length>0</sum_visit_length>
-				<bounce_count>1</bounce_count>
-				<nb_visits_converted>0</nb_visits_converted>
-			</row>
-		</subtable>
-	</row>
-	<row>
-		<label>should_be_new_visit</label>
-		<nb_uniq_visitors>1</nb_uniq_visitors>
-		<nb_visits>1</nb_visits>
-		<nb_actions>1</nb_actions>
-		<nb_users>0</nb_users>
-		<max_actions>1</max_actions>
-		<sum_visit_length>0</sum_visit_length>
-		<bounce_count>1</bounce_count>
-		<nb_visits_converted>0</nb_visits_converted>
-		<segment>referrerType==campaign;referrerName==should_be_new_visit</segment>
 	</row>
 </result>

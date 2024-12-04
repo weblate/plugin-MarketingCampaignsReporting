@@ -179,7 +179,7 @@
 		</result>
 		<result date="2013-01-23">
 			<row>
-				<label>ecommerce_keyword</label>
+				<label>Ecommerce_keyword</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -208,10 +208,10 @@
 				</goals>
 				<nb_conversions>1</nb_conversions>
 				<revenue>555</revenue>
-				<segment>campaignKeyword==ecommerce_keyword</segment>
+				<segment>campaignKeyword==Ecommerce_keyword</segment>
 			</row>
 			<row>
-				<label>mot_clé_pépère</label>
+				<label>Mot_clé_PÉPÈRE</label>
 				<nb_uniq_visitors>2</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -220,7 +220,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>2</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignKeyword==mot_cl%C3%A9_p%C3%A9p%C3%A8re</segment>
+				<segment>campaignKeyword==Mot_cl%C3%A9_P%C3%89P%C3%88RE</segment>
 			</row>
 			<row>
 				<label>keyword a</label>
@@ -295,7 +295,7 @@
 				<segment>campaignKeyword==keyword+f</segment>
 			</row>
 			<row>
-				<label>keyword from #hash tag parameter</label>
+				<label>Keyword from #hash tag parameter</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -304,7 +304,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignKeyword==keyword+from+%23hash+tag+parameter</segment>
+				<segment>campaignKeyword==Keyword+from+%23hash+tag+parameter</segment>
 			</row>
 			<row>
 				<label>keyword g</label>
@@ -331,7 +331,7 @@
 				<segment>campaignKeyword==keyword+h</segment>
 			</row>
 			<row>
-				<label>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</label>
+				<label>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -340,10 +340,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignKeyword==lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22k</segment>
+				<segment>campaignKeyword==Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22K</segment>
 			</row>
 			<row>
-				<label>not_an_advanced_campaign_at_first</label>
+				<label>Not_An_Advanced_Campaign_At_first</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -352,7 +352,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignKeyword==not_an_advanced_campaign_at_first</segment>
+				<segment>campaignKeyword==Not_An_Advanced_Campaign_At_first</segment>
 			</row>
 		</result>
 		<result date="2013-01-24" />

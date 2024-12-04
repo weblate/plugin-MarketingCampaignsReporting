@@ -21,6 +21,7 @@ use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignMedium;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignName;
 use Piwik\Plugins\MarketingCampaignsReporting\Columns\CampaignSource;
 use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
+use Piwik\Plugins\MarketingCampaignsReporting\tests\Fixtures\TrackAdvancedCampaigns;
 use Piwik\Tracker\Request;
 
 /**
@@ -29,6 +30,15 @@ use Piwik\Tracker\Request;
  */
 class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
 {
+
+    private static $fixture;
+    public static function setUpBeforeClass(): void
+    {
+        parent::setUpBeforeClass();
+        self::$fixture = new TrackAdvancedCampaigns();
+        self::$fixture->performSetUp();
+    }
+
     /**
      * @dataProvider provideRequestData
      * @param Request $request
@@ -55,17 +65,13 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetectCampaignFromRequestRetainCase(Request $request, array $campaignParams, $expectedOutput)
     {
-        $systemSettings = StaticContainer::get(SystemSettings::class);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
-        $systemSettings->doNotChangeCaseOfUtmParameters->setValue(true);
-        $systemSettings->save();
-        $detector   = new CampaignDetector();
+        $detector = new CampaignDetector();
         $dimensions = $detector->detectCampaignFromRequest($request, $campaignParams);
 
         $this->assertSame($expectedOutput, $dimensions);
     }
 
-    /**
+        /**
      * @dataProvider provideVisitData
      * @param array $visitorInfo
      * @param array $campaignParams

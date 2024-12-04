@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <result>
 	<row>
-		<label>ecommmerce_campaignplacement</label>
+		<label>Ecommmerce_CampaignPlacement</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -30,7 +30,7 @@
 		</goals>
 		<nb_conversions>1</nb_conversions>
 		<revenue>555</revenue>
-		<segment>campaignPlacement==ecommmerce_campaignplacement</segment>
+		<segment>campaignPlacement==Ecommmerce_CampaignPlacement</segment>
 	</row>
 	<row>
 		<label>bottom</label>
@@ -69,7 +69,7 @@
 		<segment>campaignPlacement==center</segment>
 	</row>
 	<row>
-		<label>google ads</label>
+		<label>Google Ads</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -78,10 +78,10 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<segment>campaignPlacement==google+ads</segment>
+		<segment>campaignPlacement==Google+Ads</segment>
 	</row>
 	<row>
-		<label>google search</label>
+		<label>Google Search</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -90,7 +90,7 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<segment>campaignPlacement==google+search</segment>
+		<segment>campaignPlacement==Google+Search</segment>
 	</row>
 	<row>
 		<label>left</label>

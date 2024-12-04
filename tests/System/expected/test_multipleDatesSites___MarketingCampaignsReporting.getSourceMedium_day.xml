@@ -4,7 +4,7 @@
 		<result date="2013-01-22" />
 		<result date="2013-01-23">
 			<row>
-				<label>ecommerce_source - ecommerce_medium</label>
+				<label>Ecommerce_source - Ecommerce_medium</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -35,7 +35,7 @@
 				<revenue>555</revenue>
 				<subtable>
 					<row>
-						<label>ecommerce_campaign</label>
+						<label>Ecommerce_campaign</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>2</nb_visits>
 						<nb_actions>2</nb_actions>
@@ -68,7 +68,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>lenghty &quot;source&quot;...lenghty &quot;source&quot;...lenghty &quot;source&quot;...</label>
+				<label>Lenghty &quot;SOURCE&quot;...Lenghty &quot;SOURCE&quot;...Lenghty &quot;SOURCE&quot;...</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -79,7 +79,7 @@
 				<nb_visits_converted>0</nb_visits_converted>
 				<subtable>
 					<row>
-						<label>lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;nam</label>
+						<label>Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAM</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -103,7 +103,7 @@
 				<nb_visits_converted>0</nb_visits_converted>
 				<subtable>
 					<row>
-						<label>october_offer</label>
+						<label>October_Offer</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -127,7 +127,7 @@
 				<nb_visits_converted>0</nb_visits_converted>
 				<subtable>
 					<row>
-						<label>november_offer</label>
+						<label>November_Offer</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
