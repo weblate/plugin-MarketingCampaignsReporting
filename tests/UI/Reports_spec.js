@@ -67,9 +67,9 @@ describe("MarketingCampaignsReporting_Reports", function () {
     });
 
     it('should display the settings page', async () => {
-        const selector = '.card-content:contains(MarketingCampaignsReporting)';
-        await captureScreen('settings_page', async () => {
-          await page.goto('?module=CoreAdminHome&action=generalSettings&idSite=1&period=day&date=yesterday');
-        }, selector);
+        await page.goto('?module=CoreAdminHome&action=generalSettings&idSite=1&period=day&date=yesterday');
+        await page.waitForNetworkIdle();
+        var report = await page.$('.card-content:contains(MarketingCampaignsReporting)');
+        expect(await report.screenshot()).to.matchImage('settings_page');
     });
 });
