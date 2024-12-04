@@ -16,6 +16,7 @@ use Piwik;
 use Piwik\Container\StaticContainer;
 use Piwik\Date;
 use Piwik\Tests\Framework\Fixture;
+use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 
 class TrackAdvancedCampaigns extends Fixture
 {
