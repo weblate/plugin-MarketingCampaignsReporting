@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <result>
 	<row>
-		<label>Ecommerce_keyword</label>
+		<label>ecommerce_keyword</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -30,11 +30,11 @@
 		</goals>
 		<nb_conversions>1</nb_conversions>
 		<revenue>555</revenue>
-		<MarketingCampaignsReporting_CampaignKeyword>Ecommerce_keyword</MarketingCampaignsReporting_CampaignKeyword>
-		<segment>campaignKeyword==Ecommerce_keyword</segment>
+		<MarketingCampaignsReporting_CampaignKeyword>ecommerce_keyword</MarketingCampaignsReporting_CampaignKeyword>
+		<segment>campaignKeyword==ecommerce_keyword</segment>
 	</row>
 	<row>
-		<label>Mot_clé_PÉPÈRE</label>
+		<label>mot_clé_pépère</label>
 		<nb_uniq_visitors>2</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -43,8 +43,8 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>2</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<MarketingCampaignsReporting_CampaignKeyword>Mot_clé_PÉPÈRE</MarketingCampaignsReporting_CampaignKeyword>
-		<segment>campaignKeyword==Mot_cl%C3%A9_P%C3%89P%C3%88RE</segment>
+		<MarketingCampaignsReporting_CampaignKeyword>mot_clé_pépère</MarketingCampaignsReporting_CampaignKeyword>
+		<segment>campaignKeyword==mot_cl%C3%A9_p%C3%A9p%C3%A8re</segment>
 	</row>
 	<row>
 		<label>keyword a</label>
@@ -125,7 +125,7 @@
 		<segment>campaignKeyword==keyword+f</segment>
 	</row>
 	<row>
-		<label>Keyword from #hash tag parameter</label>
+		<label>keyword from #hash tag parameter</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -134,8 +134,8 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<MarketingCampaignsReporting_CampaignKeyword>Keyword from #hash tag parameter</MarketingCampaignsReporting_CampaignKeyword>
-		<segment>campaignKeyword==Keyword+from+%23hash+tag+parameter</segment>
+		<MarketingCampaignsReporting_CampaignKeyword>keyword from #hash tag parameter</MarketingCampaignsReporting_CampaignKeyword>
+		<segment>campaignKeyword==keyword+from+%23hash+tag+parameter</segment>
 	</row>
 	<row>
 		<label>keyword g</label>
@@ -164,7 +164,7 @@
 		<segment>campaignKeyword==keyword+h</segment>
 	</row>
 	<row>
-		<label>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</label>
+		<label>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -173,11 +173,11 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<MarketingCampaignsReporting_CampaignKeyword>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</MarketingCampaignsReporting_CampaignKeyword>
-		<segment>campaignKeyword==Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22KEYWORD%22...Lenghty+%22K</segment>
+		<MarketingCampaignsReporting_CampaignKeyword>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</MarketingCampaignsReporting_CampaignKeyword>
+		<segment>campaignKeyword==lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22keyword%22...lenghty+%22k</segment>
 	</row>
 	<row>
-		<label>Not_An_Advanced_Campaign_At_first</label>
+		<label>not_an_advanced_campaign_at_first</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>1</nb_visits>
 		<nb_actions>1</nb_actions>
@@ -186,7 +186,7 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>1</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<MarketingCampaignsReporting_CampaignKeyword>Not_An_Advanced_Campaign_At_first</MarketingCampaignsReporting_CampaignKeyword>
-		<segment>campaignKeyword==Not_An_Advanced_Campaign_At_first</segment>
+		<MarketingCampaignsReporting_CampaignKeyword>not_an_advanced_campaign_at_first</MarketingCampaignsReporting_CampaignKeyword>
+		<segment>campaignKeyword==not_an_advanced_campaign_at_first</segment>
 	</row>
 </result>

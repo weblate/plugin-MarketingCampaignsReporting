@@ -38,8 +38,8 @@
 				
 				
 				<referrerType>campaign</referrerType>
-				<referrerName>Ecommerce_campaign</referrerName>
-				<referrerKeyword>Ecommerce_keyword</referrerKeyword>
+				<referrerName>ecommerce_campaign</referrerName>
+				<referrerKeyword>ecommerce_keyword</referrerKeyword>
 				<itemDetails>
 					<row>
 						<itemSKU>item SKU</itemSKU>
@@ -92,8 +92,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Ecommerce_campaign</referrerName>
-		<referrerKeyword>Ecommerce_keyword</referrerKeyword>
+		<referrerName>ecommerce_campaign</referrerName>
+		<referrerKeyword>ecommerce_keyword</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -158,14 +158,14 @@
 		</pluginsIcons>
 		<customVariables>
 		</customVariables>
-		<campaignId>Ecommmerce_CampaignId</campaignId>
-		<campaignContent>Ecommerce_content</campaignContent>
-		<campaignKeyword>Ecommerce_keyword</campaignKeyword>
-		<campaignMedium>Ecommerce_medium</campaignMedium>
-		<campaignName>Ecommerce_campaign</campaignName>
-		<campaignSource>Ecommerce_source</campaignSource>
-		<campaignGroup>Ecommmerce_CampaignGroup</campaignGroup>
-		<campaignPlacement>Ecommmerce_CampaignPlacement</campaignPlacement>
+		<campaignId>ecommmerce_campaignid</campaignId>
+		<campaignContent>ecommerce_content</campaignContent>
+		<campaignKeyword>ecommerce_keyword</campaignKeyword>
+		<campaignMedium>ecommerce_medium</campaignMedium>
+		<campaignName>ecommerce_campaign</campaignName>
+		<campaignSource>ecommerce_source</campaignSource>
+		<campaignGroup>ecommmerce_campaigngroup</campaignGroup>
+		<campaignPlacement>ecommmerce_campaignplacement</campaignPlacement>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -200,8 +200,8 @@
 				
 				
 				<referrerType>campaign</referrerType>
-				<referrerName>Ecommerce_campaign</referrerName>
-				<referrerKeyword>Ecommerce_keyword</referrerKeyword>
+				<referrerName>ecommerce_campaign</referrerName>
+				<referrerKeyword>ecommerce_keyword</referrerKeyword>
 				<itemDetails>
 					<row>
 						<itemSKU>item SKU</itemSKU>
@@ -254,8 +254,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Ecommerce_campaign</referrerName>
-		<referrerKeyword>Ecommerce_keyword</referrerKeyword>
+		<referrerName>ecommerce_campaign</referrerName>
+		<referrerKeyword>ecommerce_keyword</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -320,14 +320,14 @@
 		</pluginsIcons>
 		<customVariables>
 		</customVariables>
-		<campaignId>Ecommmerce_CampaignId</campaignId>
-		<campaignContent>Ecommerce_content</campaignContent>
-		<campaignKeyword>Ecommerce_keyword</campaignKeyword>
-		<campaignMedium>Ecommerce_medium</campaignMedium>
-		<campaignName>Ecommerce_campaign</campaignName>
-		<campaignSource>Ecommerce_source</campaignSource>
-		<campaignGroup>Ecommmerce_CampaignGroup</campaignGroup>
-		<campaignPlacement>Ecommmerce_CampaignPlacement</campaignPlacement>
+		<campaignId>ecommmerce_campaignid</campaignId>
+		<campaignContent>ecommerce_content</campaignContent>
+		<campaignKeyword>ecommerce_keyword</campaignKeyword>
+		<campaignMedium>ecommerce_medium</campaignMedium>
+		<campaignName>ecommerce_campaign</campaignName>
+		<campaignSource>ecommerce_source</campaignSource>
+		<campaignGroup>ecommmerce_campaigngroup</campaignGroup>
+		<campaignPlacement>ecommmerce_campaignplacement</campaignPlacement>
 	</row>
 	<row>
 		<idSite>1</idSite>
@@ -383,7 +383,7 @@
 				
 				<url>http://example.com/anotherpage</url>
 				<referrerType>campaign</referrerType>
-				<referrerName>Campaign_with_two_goals_conversions</referrerName>
+				<referrerName>campaign_with_two_goals_conversions</referrerName>
 				<referrerKeyword />
 				<icon>plugins/Morpheus/images/goal.png</icon>
 				<iconSVG>plugins/Morpheus/images/goal.svg</iconSVG>
@@ -401,7 +401,7 @@
 				
 				<url>http://example.com/anotherpage</url>
 				<referrerType>campaign</referrerType>
-				<referrerName>Campaign_with_two_goals_conversions</referrerName>
+				<referrerName>campaign_with_two_goals_conversions</referrerName>
 				<referrerKeyword />
 				<icon>plugins/Morpheus/images/goal.png</icon>
 				<iconSVG>plugins/Morpheus/images/goal.svg</iconSVG>
@@ -443,7 +443,7 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Campaign_with_two_goals_conversions</referrerName>
+		<referrerName>campaign_with_two_goals_conversions</referrerName>
 		<referrerKeyword />
 		<referrerKeywordPosition />
 		<referrerUrl />
@@ -513,7 +513,7 @@
 		<campaignContent />
 		<campaignKeyword />
 		<campaignMedium />
-		<campaignName>Campaign_with_two_goals_conversions</campaignName>
+		<campaignName>campaign_with_two_goals_conversions</campaignName>
 		<campaignSource />
 		<campaignGroup />
 		<campaignPlacement />
@@ -578,8 +578,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAM</referrerName>
-		<referrerKeyword>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</referrerKeyword>
+		<referrerName>lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;nam</referrerName>
+		<referrerKeyword>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -646,10 +646,10 @@
 		</customVariables>
 		<campaignId />
 		<campaignContent />
-		<campaignKeyword>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</campaignKeyword>
+		<campaignKeyword>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</campaignKeyword>
 		<campaignMedium />
-		<campaignName>Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAM</campaignName>
-		<campaignSource>Lenghty &quot;SOURCE&quot;...Lenghty &quot;SOURCE&quot;...Lenghty &quot;SOURCE&quot;...</campaignSource>
+		<campaignName>lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;nam</campaignName>
+		<campaignSource>lenghty &quot;source&quot;...lenghty &quot;source&quot;...lenghty &quot;source&quot;...</campaignSource>
 		<campaignGroup />
 		<campaignPlacement />
 	</row>
@@ -713,7 +713,7 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>CampaignNameDimension - No Other Dimension for this visit</referrerName>
+		<referrerName>campaignnamedimension - no other dimension for this visit</referrerName>
 		<referrerKeyword />
 		<referrerKeywordPosition />
 		<referrerUrl />
@@ -783,7 +783,7 @@
 		<campaignContent />
 		<campaignKeyword />
 		<campaignMedium />
-		<campaignName>CampaignNameDimension - No Other Dimension for this visit</campaignName>
+		<campaignName>campaignnamedimension - no other dimension for this visit</campaignName>
 		<campaignSource />
 		<campaignGroup />
 		<campaignPlacement />
@@ -848,8 +848,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Campaign_Hashed</referrerName>
-		<referrerKeyword>Keyword from #hash tag parameter</referrerKeyword>
+		<referrerName>campaign_hashed</referrerName>
+		<referrerKeyword>keyword from #hash tag parameter</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -916,9 +916,9 @@
 		</customVariables>
 		<campaignId />
 		<campaignContent />
-		<campaignKeyword>Keyword from #hash tag parameter</campaignKeyword>
+		<campaignKeyword>keyword from #hash tag parameter</campaignKeyword>
 		<campaignMedium />
-		<campaignName>Campaign_Hashed</campaignName>
+		<campaignName>campaign_hashed</campaignName>
 		<campaignSource />
 		<campaignGroup />
 		<campaignPlacement />
@@ -983,8 +983,8 @@
 		<interactions>1</interactions>
 		<referrerType>campaign</referrerType>
 		<referrerTypeName>Campaigns</referrerTypeName>
-		<referrerName>Default_Offer</referrerName>
-		<referrerKeyword>Not_An_Advanced_Campaign_At_first</referrerKeyword>
+		<referrerName>default_offer</referrerName>
+		<referrerKeyword>not_an_advanced_campaign_at_first</referrerKeyword>
 		<referrerKeywordPosition />
 		<referrerUrl />
 		<referrerSearchEngineUrl />
@@ -1051,9 +1051,9 @@
 		</customVariables>
 		<campaignId />
 		<campaignContent />
-		<campaignKeyword>Not_An_Advanced_Campaign_At_first</campaignKeyword>
+		<campaignKeyword>not_an_advanced_campaign_at_first</campaignKeyword>
 		<campaignMedium />
-		<campaignName>Default_Offer</campaignName>
+		<campaignName>default_offer</campaignName>
 		<campaignSource />
 		<campaignGroup />
 		<campaignPlacement />

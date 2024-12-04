@@ -4,7 +4,7 @@
 		<result date="2013-01-22" />
 		<result date="2013-01-23">
 			<row>
-				<label>Ecommmerce_CampaignGroup</label>
+				<label>ecommmerce_campaigngroup</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -33,10 +33,10 @@
 				</goals>
 				<nb_conversions>1</nb_conversions>
 				<revenue>555</revenue>
-				<segment>campaignGroup==Ecommmerce_CampaignGroup</segment>
+				<segment>campaignGroup==ecommmerce_campaigngroup</segment>
 			</row>
 			<row>
-				<label>Audience Group 1</label>
+				<label>audience group 1</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -45,7 +45,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignGroup==Audience+Group+1</segment>
+				<segment>campaignGroup==audience+group+1</segment>
 			</row>
 			<row>
 				<label>cg1</label>
@@ -144,7 +144,7 @@
 				<segment>campaignGroup==cg8</segment>
 			</row>
 			<row>
-				<label>Group 1</label>
+				<label>group 1</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -153,7 +153,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignGroup==Group+1</segment>
+				<segment>campaignGroup==group+1</segment>
 			</row>
 		</result>
 		<result date="2013-01-24" />

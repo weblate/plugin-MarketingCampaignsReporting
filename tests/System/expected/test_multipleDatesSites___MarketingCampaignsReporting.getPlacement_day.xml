@@ -4,7 +4,7 @@
 		<result date="2013-01-22" />
 		<result date="2013-01-23">
 			<row>
-				<label>Ecommmerce_CampaignPlacement</label>
+				<label>ecommmerce_campaignplacement</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -33,7 +33,7 @@
 				</goals>
 				<nb_conversions>1</nb_conversions>
 				<revenue>555</revenue>
-				<segment>campaignPlacement==Ecommmerce_CampaignPlacement</segment>
+				<segment>campaignPlacement==ecommmerce_campaignplacement</segment>
 			</row>
 			<row>
 				<label>bottom</label>
@@ -72,7 +72,7 @@
 				<segment>campaignPlacement==center</segment>
 			</row>
 			<row>
-				<label>Google Ads</label>
+				<label>google ads</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -81,10 +81,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignPlacement==Google+Ads</segment>
+				<segment>campaignPlacement==google+ads</segment>
 			</row>
 			<row>
-				<label>Google Search</label>
+				<label>google search</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -93,7 +93,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignPlacement==Google+Search</segment>
+				<segment>campaignPlacement==google+search</segment>
 			</row>
 			<row>
 				<label>left</label>

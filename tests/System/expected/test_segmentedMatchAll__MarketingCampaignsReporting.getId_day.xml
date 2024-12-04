@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <result>
 	<row>
-		<label>CAMPAIGN_ID_KABOOM</label>
+		<label>campaign_id_kaboom</label>
 		<nb_uniq_visitors>2</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -10,11 +10,11 @@
 		<sum_visit_length>0</sum_visit_length>
 		<bounce_count>2</bounce_count>
 		<nb_visits_converted>0</nb_visits_converted>
-		<MarketingCampaignsReporting_CampaignId>CAMPAIGN_ID_KABOOM</MarketingCampaignsReporting_CampaignId>
-		<segment>campaignId==CAMPAIGN_ID_KABOOM</segment>
+		<MarketingCampaignsReporting_CampaignId>campaign_id_kaboom</MarketingCampaignsReporting_CampaignId>
+		<segment>campaignId==campaign_id_kaboom</segment>
 	</row>
 	<row>
-		<label>Ecommmerce_CampaignId</label>
+		<label>ecommmerce_campaignid</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -43,8 +43,8 @@
 		</goals>
 		<nb_conversions>1</nb_conversions>
 		<revenue>555</revenue>
-		<MarketingCampaignsReporting_CampaignId>Ecommmerce_CampaignId</MarketingCampaignsReporting_CampaignId>
-		<segment>campaignId==Ecommmerce_CampaignId</segment>
+		<MarketingCampaignsReporting_CampaignId>ecommmerce_campaignid</MarketingCampaignsReporting_CampaignId>
+		<segment>campaignId==ecommmerce_campaignid</segment>
 	</row>
 	<row>
 		<label>cid1</label>

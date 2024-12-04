@@ -433,7 +433,7 @@
 		</result>
 		<result date="2013-01-23">
 			<row>
-				<label>Ecommerce_campaign</label>
+				<label>ecommerce_campaign</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>2</nb_visits>
 				<nb_actions>2</nb_actions>
@@ -462,10 +462,10 @@
 				</goals>
 				<nb_conversions>1</nb_conversions>
 				<revenue>555</revenue>
-				<segment>campaignName==Ecommerce_campaign</segment>
+				<segment>campaignName==ecommerce_campaign</segment>
 				<subtable>
 					<row>
-						<label>Ecommerce_keyword - Ecommerce_content</label>
+						<label>ecommerce_keyword - ecommerce_content</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>2</nb_visits>
 						<nb_actions>2</nb_actions>
@@ -698,7 +698,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>CampaignNameDimension - No Other Dimension for this visit</label>
+				<label>campaignnamedimension - no other dimension for this visit</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -707,10 +707,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==CampaignNameDimension+-+No+Other+Dimension+for+this+visit</segment>
+				<segment>campaignName==campaignnamedimension+-+no+other+dimension+for+this+visit</segment>
 			</row>
 			<row>
-				<label>Campaign_Hashed</label>
+				<label>campaign_hashed</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -719,10 +719,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==Campaign_Hashed</segment>
+				<segment>campaignName==campaign_hashed</segment>
 				<subtable>
 					<row>
-						<label>Keyword from #hash tag parameter</label>
+						<label>keyword from #hash tag parameter</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -735,7 +735,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>Campaign_with_two_goals_conversions</label>
+				<label>campaign_with_two_goals_conversions</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -758,10 +758,10 @@
 				</goals>
 				<nb_conversions>3</nb_conversions>
 				<revenue>4444</revenue>
-				<segment>campaignName==Campaign_with_two_goals_conversions</segment>
+				<segment>campaignName==campaign_with_two_goals_conversions</segment>
 			</row>
 			<row>
-				<label>Default_Offer</label>
+				<label>default_offer</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -770,10 +770,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==Default_Offer</segment>
+				<segment>campaignName==default_offer</segment>
 				<subtable>
 					<row>
-						<label>Not_An_Advanced_Campaign_At_first</label>
+						<label>not_an_advanced_campaign_at_first</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -786,7 +786,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAME&quot;...Lenghty &quot;NAM</label>
+				<label>lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;name&quot;...lenghty &quot;nam</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -795,10 +795,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAME%22...Lenghty+%22NAM</segment>
+				<segment>campaignName==lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22name%22...lenghty+%22nam</segment>
 				<subtable>
 					<row>
-						<label>Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;KEYWORD&quot;...Lenghty &quot;K</label>
+						<label>lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;keyword&quot;...lenghty &quot;k</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -811,7 +811,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>November_Offer</label>
+				<label>november_offer</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -820,10 +820,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==November_Offer</segment>
+				<segment>campaignName==november_offer</segment>
 				<subtable>
 					<row>
-						<label>Mot_clé_PÉPÈRE - contains personalized campaigns for client</label>
+						<label>mot_clé_pépère - contains personalized campaigns for client</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -836,7 +836,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>October_Offer</label>
+				<label>october_offer</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -845,10 +845,10 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==October_Offer</segment>
+				<segment>campaignName==october_offer</segment>
 				<subtable>
 					<row>
-						<label>Mot_clé_PÉPÈRE - none</label>
+						<label>mot_clé_pépère - none</label>
 						<nb_uniq_visitors>1</nb_uniq_visitors>
 						<nb_visits>1</nb_visits>
 						<nb_actions>1</nb_actions>
@@ -861,7 +861,7 @@
 				</subtable>
 			</row>
 			<row>
-				<label>SHOULD_BE_NEW_VISIT</label>
+				<label>should_be_new_visit</label>
 				<nb_uniq_visitors>1</nb_uniq_visitors>
 				<nb_visits>1</nb_visits>
 				<nb_actions>1</nb_actions>
@@ -870,7 +870,7 @@
 				<sum_visit_length>0</sum_visit_length>
 				<bounce_count>1</bounce_count>
 				<nb_visits_converted>0</nb_visits_converted>
-				<segment>campaignName==SHOULD_BE_NEW_VISIT</segment>
+				<segment>campaignName==should_be_new_visit</segment>
 			</row>
 		</result>
 		<result date="2013-01-24" />

@@ -14,7 +14,7 @@
 		<segment>campaignMedium==email</segment>
 	</row>
 	<row>
-		<label>Ecommerce_medium</label>
+		<label>ecommerce_medium</label>
 		<nb_uniq_visitors>1</nb_uniq_visitors>
 		<nb_visits>2</nb_visits>
 		<nb_actions>2</nb_actions>
@@ -43,7 +43,7 @@
 		</goals>
 		<nb_conversions>1</nb_conversions>
 		<revenue>555</revenue>
-		<MarketingCampaignsReporting_CampaignMedium>Ecommerce_medium</MarketingCampaignsReporting_CampaignMedium>
-		<segment>campaignMedium==Ecommerce_medium</segment>
+		<MarketingCampaignsReporting_CampaignMedium>ecommerce_medium</MarketingCampaignsReporting_CampaignMedium>
+		<segment>campaignMedium==ecommerce_medium</segment>
 	</row>
 </result>
