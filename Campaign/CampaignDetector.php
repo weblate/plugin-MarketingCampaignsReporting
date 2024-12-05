@@ -12,13 +12,10 @@
 
 namespace Piwik\Plugins\MarketingCampaignsReporting\Campaign;
 
-use Piwik\Common;
-use Piwik\Container\StaticContainer;
 use Piwik\Plugins\MarketingCampaignsReporting\MarketingCampaignsReporting;
 use Piwik\Tracker\PageUrl;
 use Piwik\Tracker\Request;
 use Piwik\UrlHelper;
-use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 
 class CampaignDetector implements CampaignDetectorInterface
 {
@@ -88,10 +85,6 @@ class CampaignDetector implements CampaignDetectorInterface
     {
         $valueFromRequest = UrlHelper::getParameterFromQueryString($queryString, $param) ?? '';
         $valueFromRequest = trim(urldecode($valueFromRequest));
-        $systemSettings = StaticContainer::get(SystemSettings::class);
-        if ($param != "mtm_clid" && !$systemSettings->doNotChangeCaseOfUtmParameters->getValue()) {
-            $valueFromRequest = Common::mb_strtolower($valueFromRequest);
-        }
         $valueFromRequest = substr($valueFromRequest, 0, 250);
         if (!empty($valueFromRequest)) {
             return $valueFromRequest;
