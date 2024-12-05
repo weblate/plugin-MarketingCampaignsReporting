@@ -78,7 +78,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'idSite'  => self::$fixture->idSite,
                 'date'    => $dateWithPluginEnabled,
                 'periods' => ['day'],
-                'testSuffix' => $phpVersionPrefix . version_compare(Version::VERSION, '5.2.0-b6', '<') ?'old' : '',
+                'testSuffix' => $phpVersionPrefix . version_compare(Version::VERSION, '5.2.0-b6', '<') ? 'old' : '',
             ]
         ];
 
@@ -89,15 +89,20 @@ class TrackSeveralCampaignsTest extends SystemTestCase
             $columnsToHide = ['referrerType', 'referrerName', 'referrerKeyword'];
         }
 
+        $liveApiParams = [
+            'idSite'            => self::$fixture->idSite,
+            'date'              => $dateWithPluginEnabled,
+            'periods'           => ['day'],
+            'xmlFieldsToRemove' => $columnsToHide,
+        ];
+
+        if ($phpVersionPrefix) {
+            $liveApiParams['testSuffix'] = $phpVersionPrefix;
+        }
+
         $apiToTest[] = [
             'Live.getLastVisitsDetails',
-            [
-                'idSite'            => self::$fixture->idSite,
-                'date'              => $dateWithPluginEnabled,
-                'periods'           => ['day'],
-                'xmlFieldsToRemove' => $columnsToHide,
-                'testSuffix' => $phpVersionPrefix,
-            ]
+            $liveApiParams
         ];
 
         $api = [
