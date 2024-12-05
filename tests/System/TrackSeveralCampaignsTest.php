@@ -78,7 +78,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'idSite'  => self::$fixture->idSite,
                 'date'    => $dateWithPluginEnabled,
                 'periods' => ['day'],
-                'testSuffix' => version_compare(Version::VERSION, '5.2.0-b6', '<') ? $phpVersionPrefix . 'old' : '',
+                'testSuffix' => $phpVersionPrefix . version_compare(Version::VERSION, '5.2.0-b6', '<') ?'old' : '',
             ]
         ];
 
@@ -96,6 +96,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'date'              => $dateWithPluginEnabled,
                 'periods'           => ['day'],
                 'xmlFieldsToRemove' => $columnsToHide,
+                'testSuffix' => $phpVersionPrefix,
             ]
         ];
 
