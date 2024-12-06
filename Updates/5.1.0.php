@@ -34,6 +34,5 @@ class Updates_5_1_0 extends PiwikUpdates
         $systemSettings->doNotChangeCaseOfUtmParameters->setIsWritableByCurrentUser(true);
         $systemSettings->doNotChangeCaseOfUtmParameters->setValue(false);
         $systemSettings->save();
-        $updater->executeMigrations(__FILE__, []);
     }
 }
