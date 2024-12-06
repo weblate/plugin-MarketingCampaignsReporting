@@ -17,10 +17,12 @@ use Piwik\ArchiveProcessor\Record;
 use Piwik\ArchiveProcessor\RecordBuilder;
 use Piwik\Common;
 use Piwik\Config;
+use Piwik\Container\StaticContainer;
 use Piwik\DataAccess\LogAggregator;
 use Piwik\DataTable;
 use Piwik\Metrics;
 use Piwik\Plugins\MarketingCampaignsReporting\Archiver;
+use Piwik\Plugins\MarketingCampaignsReporting\SystemSettings;
 use Piwik\Version;
 
 class CampaignReporting extends RecordBuilder
@@ -132,6 +134,7 @@ class CampaignReporting extends RecordBuilder
 
     protected function getLabelFromRowDimensions(array $dimensionsAsLabel, array $row): string
     {
+        $systemSettings = StaticContainer::get(SystemSettings::class);
         $labels = [];
         foreach ($dimensionsAsLabel as $dimensionLabelPart) {
             if (
@@ -142,6 +145,10 @@ class CampaignReporting extends RecordBuilder
             }
         }
         $label = implode(Archiver::SEPARATOR_COMBINED_DIMENSIONS, $labels);
+        if ($label && !$systemSettings->doNotChangeCaseOfUtmParameters->getValue()) {
+            $label = Common::mb_strtolower($label);
+        }
+
         return $label;
     }
 

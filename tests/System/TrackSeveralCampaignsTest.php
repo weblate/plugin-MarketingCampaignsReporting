@@ -70,6 +70,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
     {
         $dateWithPluginEnabled = self::$fixture->dateTimeWithPluginEnabled;
         $dateTime              = self::$fixture->dateTime;
+        $phpVersionPrefix = version_compare(PHP_VERSION, 8.3, '<') ? 'min_php_' : '';
 
         $apiToTest[] = [
             'API.get',
@@ -77,7 +78,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'idSite'  => self::$fixture->idSite,
                 'date'    => $dateWithPluginEnabled,
                 'periods' => ['day'],
-                'testSuffix' => version_compare(Version::VERSION, '5.2.0-b6', '<') ? 'old' : '',
+                'testSuffix' => (!empty($phpVersionPrefix) ? $phpVersionPrefix : 'max_php_') . (version_compare(Version::VERSION, '5.2.0-b6', '<') ? 'old' : ''),
             ]
         ];
 
@@ -95,6 +96,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'date'              => $dateWithPluginEnabled,
                 'periods'           => ['day'],
                 'xmlFieldsToRemove' => $columnsToHide,
+                'testSuffix'        => $phpVersionPrefix,
             ]
         ];
 
@@ -214,13 +216,15 @@ class TrackSeveralCampaignsTest extends SystemTestCase
             'Referrers.getCampaigns',
         ];
 
+        $phpVersionPrefix = version_compare(PHP_VERSION, 8.3, '<') ? 'min_php_' : '';
+
         $apiToTest[] = [
             $api,
             [
                 'idSite'                 => self::$fixture->idSite,
                 'date'                   => $dateWithPluginEnabled,
                 'periods'                => ['day'],
-                'testSuffix'             => 'expanded',
+                'testSuffix'             => $phpVersionPrefix . 'expanded',
                 'otherRequestParameters' => ['expanded' => 1],
             ]
         ];
@@ -230,7 +234,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
                 'idSite'                 => self::$fixture->idSite,
                 'date'                   => $dateWithPluginEnabled,
                 'periods'                => ['day'],
-                'testSuffix'             => 'flat',
+                'testSuffix'             => $phpVersionPrefix . 'flat',
                 'otherRequestParameters' => ['flat' => 1, 'expanded' => 0],
             ]
         ];

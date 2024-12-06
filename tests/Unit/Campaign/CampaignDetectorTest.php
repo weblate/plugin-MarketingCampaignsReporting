@@ -38,10 +38,10 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
         $detector   = new CampaignDetector();
         $dimensions = $detector->detectCampaignFromRequest($request, $campaignParams);
 
-        $this->assertEquals($expectedOutput, $dimensions);
+        $this->assertSame($expectedOutput, $dimensions);
     }
 
-    /**
+        /**
      * @dataProvider provideVisitData
      * @param array $visitorInfo
      * @param array $campaignParams
@@ -60,11 +60,11 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
         return [
             'normal query string'                         => [
                 'request'        => $this->createRequestMock(
-                    'http://example.com/?mtm_campaign=campName&mtm_kwd=sdf1'
+                    'http://example.com/?mtm_campaign=CAmpName&mtm_kwd=sdf1'
                 ),
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
-                    'campaign_name'    => 'campname',
+                    'campaign_name'    => 'CAmpName',
                     'campaign_keyword' => 'sdf1'
                 ]
             ],
@@ -74,7 +74,7 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
                 ),
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
-                    'campaign_name'    => 'campname2',
+                    'campaign_name'    => 'campName2',
                     'campaign_keyword' => 'sdf2'
                 ]
             ],
@@ -84,7 +84,7 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
                 ),
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
-                    'campaign_name'    => 'campname',
+                    'campaign_name'    => 'campName',
                     'campaign_keyword' => 'sdf1'
                 ]
             ],
@@ -94,7 +94,7 @@ class CampaignDetectorTest extends \PHPUnit\Framework\TestCase
                 ),
                 'campaignParams' => $this->getCampaignParameters(),
                 'expectedOutput' => [
-                    'campaign_name'    => 'campname2',
+                    'campaign_name'    => 'campName2',
                     'campaign_keyword' => 'sdf2'
                 ]
             ],

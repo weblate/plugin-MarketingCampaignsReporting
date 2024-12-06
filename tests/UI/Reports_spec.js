@@ -65,4 +65,12 @@ describe("MarketingCampaignsReporting_Reports", function () {
         var report = await page.$('.reporting-page');
         expect(await report.screenshot()).to.matchImage('visitor_log');
     });
+
+    it('should display the settings page', async () => {
+        var selector = '.card-content:contains(MarketingCampaignsReporting)';
+        await page.goto('?module=CoreAdminHome&action=generalSettings&idSite=1&period=day&date=yesterday');
+        await page.waitForTimeout(1000);
+        await page.waitForNetworkIdle();
+        expect(await page.screenshotSelector(selector)).to.matchImage('settings_page');
+    });
 });

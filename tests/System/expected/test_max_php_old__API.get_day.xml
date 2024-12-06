@@ -33,7 +33,7 @@
 	<Referrers_distinctKeywords>0</Referrers_distinctKeywords>
 	<Referrers_distinctWebsites>0</Referrers_distinctWebsites>
 	<Referrers_distinctWebsitesUrls>0</Referrers_distinctWebsitesUrls>
-	<Referrers_distinctCampaigns>18</Referrers_distinctCampaigns>
+	<Referrers_distinctCampaigns>19</Referrers_distinctCampaigns>
 	<PagePerformance_network_time>0</PagePerformance_network_time>
 	<PagePerformance_network_hits>0</PagePerformance_network_hits>
 	<PagePerformance_servery_time>0</PagePerformance_servery_time>
@@ -78,7 +78,6 @@
 	<nb_uniq_outlinks>0</nb_uniq_outlinks>
 	<nb_searches>0</nb_searches>
 	<nb_keywords>0</nb_keywords>
-	<hits>18</hits>
 	<Referrers_visitorsFromDirectEntry_percent>0%</Referrers_visitorsFromDirectEntry_percent>
 	<Referrers_visitorsFromSearchEngines_percent>0%</Referrers_visitorsFromSearchEngines_percent>
 	<Referrers_visitorsFromCampaigns_percent>100%</Referrers_visitorsFromCampaigns_percent>
