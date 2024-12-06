@@ -51,7 +51,7 @@ class SystemSettingsTest extends IntegrationTestCase
     public function test_doNotChangeCaseOfUtmParameters_shouldThrowException()
     {
         $this->expectException(\Exception::class);
-        $this->expectExceptionMessage('The value for the "Retain campaign parameter capitalisation" field in the "MarketingCampaignsReporting" plugin is not allowed');
+        $this->expectExceptionMessage('The value for the "Keep campaign parameter capitalisation" field in the "MarketingCampaignsReporting" plugin is not allowed');
         $this->settings->doNotChangeCaseOfUtmParameters->setValue('aa');
     }
 
