@@ -37,7 +37,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [ '7.2', '8.4' ]
+        php: [ '7.2', '8.2', '8.4' ]
         engine: [ 'Mysql', 'Mariadb' ]
         adapter: [ 'PDO_MYSQL', 'MYSQLI' ]
         target: ['minimum_required_matomo', 'maximum_supported_matomo']
