@@ -39,6 +39,7 @@ jobs:
       matrix:
         php: [ '7.2', '8.4' ]
         engine: [ 'Mysql', 'Mariadb' ]
+        adapter: [ 'PDO_MYSQL', 'MYSQLI' ]
         target: ['minimum_required_matomo', 'maximum_supported_matomo']
         exclude:
           - php: '7.2'
@@ -47,6 +48,12 @@ jobs:
             engine: 'Mysql'
           - php: '8.4'
             engine: 'Mariadb'
+          - php: '7.2'
+            adapter: 'MYSQLI'
+          - php: '8.2'
+            adapter: 'MYSQLI'
+          - php: '8.4'
+            adapter: 'PDO_MYSQL'
     steps:
       - uses: actions/checkout@v3
         with:
@@ -58,6 +65,8 @@ jobs:
         uses: matomo-org/github-action-tests@main
         with:
           plugin-name: 'MarketingCampaignsReporting'
+          mysql-driver: ${{ matrix.adapter }}
+          mysql-engine: ${{ matrix.engine }}
           php-version: ${{ matrix.php }}
           test-type: 'PluginTests'
           matomo-test-branch: ${{ matrix.target }}
