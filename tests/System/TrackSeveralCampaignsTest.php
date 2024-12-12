@@ -32,7 +32,8 @@ class TrackSeveralCampaignsTest extends SystemTestCase
 
     public static $isMariaDB = false;
 
-    public static function setUpBeforeClass(): void {
+    public static function setUpBeforeClass(): void
+    {
         parent::setUpBeforeClass();
         $version = strtolower(Db::fetchOne("SELECT VERSION()"));
         self::$isMariaDB = strpos($version, "mariadb") !== false;
