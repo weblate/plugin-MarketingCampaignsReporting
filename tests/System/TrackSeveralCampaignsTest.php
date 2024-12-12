@@ -13,6 +13,7 @@
 namespace Piwik\Plugins\MarketingCampaignsReporting\tests\System;
 
 use Piwik\Cache;
+use Piwik\Db;
 use Piwik\Plugin\Manager;
 use Piwik\Plugins\MarketingCampaignsReporting\tests\Fixtures\TrackAdvancedCampaigns;
 use Piwik\Tests\Framework\TestCase\SystemTestCase;
@@ -28,6 +29,14 @@ class TrackSeveralCampaignsTest extends SystemTestCase
      * @var TrackAdvancedCampaigns
      */
     public static $fixture = null; // initialized below class definition
+
+    public static $isMariaDB = false;
+
+    public static function setUpBeforeClass(): void {
+        parent::setUpBeforeClass();
+        $version = strtolower(Db::fetchOne("SELECT VERSION()"));
+        self::$isMariaDB = strpos($version, "mariadb") !== false;
+    }
 
     public static function getOutputPrefix()
     {
@@ -70,7 +79,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
     {
         $dateWithPluginEnabled = self::$fixture->dateTimeWithPluginEnabled;
         $dateTime              = self::$fixture->dateTime;
-        $phpVersionPrefix = version_compare(PHP_VERSION, 8.3, '<') ? 'min_php_' : '';
+        $phpVersionPrefix = version_compare(PHP_VERSION, 8.2, '<') && !self::$isMariaDB ? 'min_php_' : '';
 
         $apiToTest[] = [
             'API.get',
@@ -216,7 +225,7 @@ class TrackSeveralCampaignsTest extends SystemTestCase
             'Referrers.getCampaigns',
         ];
 
-        $phpVersionPrefix = version_compare(PHP_VERSION, 8.3, '<') ? 'min_php_' : '';
+        $phpVersionPrefix = version_compare(PHP_VERSION, 8.2, '<') && !self::$isMariaDB ? 'min_php_' : '';
 
         $apiToTest[] = [
             $api,
