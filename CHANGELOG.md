@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.1.0
+- Added an option to retain the case of campaign parameter values via SystemSetting
+
 #### 5.0.4
 - Added plugin category for Marketplace
 
