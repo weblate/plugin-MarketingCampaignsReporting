@@ -82,7 +82,7 @@ class CampaignReporting extends RecordBuilder
         $systemSettings = StaticContainer::get(SystemSettings::class);
         if (!$systemSettings->doNotChangeCaseOfUtmParameters->getValue()) {
             $newDimensions = [];
-            foreach($dimensions as $dimension) {
+            foreach ($dimensions as $dimension) {
                 $lowerDimensionColumn = $table . '.' . $dimension;
                 $newDimensions[$dimension] = "LOWER($lowerDimensionColumn)";
             }
